@@ -35,6 +35,8 @@ juce_add_plugin(VOCALCHAX
     VST3_CATEGORIES Fx
 )
 
+juce_generate_juce_header(VOCALCHAX)
+
 target_sources(VOCALCHAX PRIVATE
     Source/PluginProcessor.cpp
     Source/PluginProcessor.h
