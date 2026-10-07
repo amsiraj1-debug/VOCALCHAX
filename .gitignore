@@ -1,0 +1,17 @@
+build/
+Builds/
+cmake-build-*/
+.vscode/
+.idea/
+.DS_Store
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+*.pdb
+*.ilk
+*.obj
+*.tlog
+*.lastbuildstate
+models/*.onnx
+!models/README.md
