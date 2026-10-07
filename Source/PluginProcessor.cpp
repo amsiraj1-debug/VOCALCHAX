@@ -36,11 +36,11 @@ juce::AudioProcessorValueTreeState::ParameterLayout VocalChaxAudioProcessor::cre
 
     parameters.push_back (std::make_unique<juce::AudioParameterFloat> (
         juce::ParameterID { ParameterIDs::inputGain, 1 }, "Input Gain",
-        Range { -24.0f, 24.0f, 0.01f }, 0.0f, "dB"));
+        Range { -24.0f, 24.0f, 0.01f }, 0.0f));
 
     parameters.push_back (std::make_unique<juce::AudioParameterFloat> (
         juce::ParameterID { ParameterIDs::outputGain, 1 }, "Output Gain",
-        Range { -24.0f, 24.0f, 0.01f }, 0.0f, "dB"));
+        Range { -24.0f, 24.0f, 0.01f }, 0.0f));
 
     parameters.push_back (std::make_unique<juce::AudioParameterFloat> (
         juce::ParameterID { ParameterIDs::mix, 1 }, "Mix",
@@ -48,7 +48,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout VocalChaxAudioProcessor::cre
 
     parameters.push_back (std::make_unique<juce::AudioParameterFloat> (
         juce::ParameterID { ParameterIDs::pitch, 1 }, "Pitch",
-        Range { -12.0f, 12.0f, 0.01f }, 0.0f, "st"));
+        Range { -12.0f, 12.0f, 0.01f }, 0.0f));
 
     parameters.push_back (std::make_unique<juce::AudioParameterFloat> (
         juce::ParameterID { ParameterIDs::formant, 1 }, "Formant",
